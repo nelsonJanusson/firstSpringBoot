@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/" lang="en" >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset = UTF-8" />
+        <title>greeter</title>
+    </head>
+    <body>
+
+    <form th:action="@{/greet}" >
+        <button th:name="sentence" type="submit"   th:value="hi">say hi here</button>
+        <button th:name="sentence" type="submit"  th:value="bye">say bye here</button>
+    </form>
+
+    <p th:text="${greeting}">undecided</p>
+    </body>
+</html>
+
